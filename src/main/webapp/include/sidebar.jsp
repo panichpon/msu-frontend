@@ -35,9 +35,9 @@
                         <a class="collapse-item" href="${pageContext.request.contextPath}/login">Login</a>
                         <a class="collapse-item" href="${pageContext.request.contextPath}/register">Register</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">Booking Pages:</h6>
+                        <a class="collapse-item" href="${pageContext.request.contextPath}/booking">Booking trip</a>
+                        <a class="collapse-item" href="${pageContext.request.contextPath}/destination">Hot destinations</a>
                     </div>
                 </div>
             </li>

@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "https://msu.zyntelligent.com/api/v1/member/register",
+      url: "https://msu.zyntelligent.com/api/v1/customer/register",
       data: formData,
       dataType: "json",
       encode: true,

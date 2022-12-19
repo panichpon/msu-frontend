@@ -61,4 +61,38 @@ public class HomeController {
 		}
 		return model;
 	}
+	
+	@RequestMapping(value = "/booking", method = RequestMethod.GET)
+	public ModelAndView booking(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+
+		System.out.println("Home Page Requested");
+		ModelAndView model = new ModelAndView("booking");
+		try {
+
+			return model;
+		} catch (Exception e) {
+			model.addObject("exception", e);
+			model.addObject("url", request.getRequestURL());
+			model.setViewName("error");
+		}
+		return model;
+	}
+	
+	@RequestMapping(value = "/destination", method = RequestMethod.GET)
+	public ModelAndView destination(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+
+		System.out.println("Home Page Requested");
+		ModelAndView model = new ModelAndView("destination");
+		try {
+
+			return model;
+		} catch (Exception e) {
+			model.addObject("exception", e);
+			model.addObject("url", request.getRequestURL());
+			model.setViewName("error");
+		}
+		return model;
+	}
 }
